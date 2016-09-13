@@ -2,7 +2,7 @@
 #
 # Sets up ZSH as default shell
 
-set -e
+# set -e
 
-echo "> Making ZSH default shell"
-chsh -s $(which zsh)
+# echo "> Making ZSH default shell"
+# chsh -s $(which zsh)
