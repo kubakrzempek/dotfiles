@@ -5,6 +5,7 @@ dkms
 
 ## UTILS
 autoconf
+ack-grep
 localepurge
 libssl-dev
 curl
