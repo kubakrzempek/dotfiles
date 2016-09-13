@@ -1,0 +1,74 @@
+"*":
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "tab"
+  autosave: {}
+  core:
+    disabledPackages: [
+      "background-tips"
+      "exception-reporting"
+      "metrics"
+      "autosave"
+      "language-c"
+      "language-clojure"
+      "language-csharp"
+      "language-go"
+      "language-java"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-python"
+      "language-toml"
+    ]
+    projectHome: "/home/kuba/src"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+  editor:
+    fontFamily: "Fira Mono"
+    fontSize: 15
+    invisibles: {}
+    preferredLineLength: 100
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapHangingIndent: 2
+  "file-icons":
+    onChanges: true
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  fonts:
+    fontFamily: "Fira Mono"
+    preview: "dfdfdfd @"
+  "git-diff": {}
+  "git-plus": {}
+  minimap:
+    absoluteMode: true
+  "one-dark-ui": {}
+  "one-light-ui": {}
+  pigments: {}
+  rulerz: {}
+  tabs:
+    enableVcsColoring: true
+    usePreviewTabs: true
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+".diff.source":
+  editor:
+    preferredLineLength: 100
+    softWrapHangingIndent: 2
+".html.text.vue":
+  editor:
+    preferredLineLength: 100
+    softWrapHangingIndent: 2
+".slim.text":
+  editor:
+    preferredLineLength: 100
+    softWrapHangingIndent: 2
+  whitespace:
+    removeTrailingWhitespace: true
