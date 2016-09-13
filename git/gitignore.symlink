@@ -1,0 +1,3 @@
+.ruby-version
+.rbenv-vars*
+.npm-debug.log
