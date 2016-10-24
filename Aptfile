@@ -18,9 +18,16 @@ npm
 zsh
 unrar
 xclip
+unity-tweak-tool
+tlp
+tlp-rdw
+flashplugin-installer
+icedtea-8-plugin
+openjdk-8-jre
 
 ## PROGRAMS
 atom
+bleachbit
 vim
 chromium-browser
 vlc
@@ -34,6 +41,7 @@ postgresql-contrib-9.5
 virtualbox-5.1
 steam
 inkscape
+gufw
 
 ## MISC
 cowsay

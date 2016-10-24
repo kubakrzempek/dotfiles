@@ -30,3 +30,5 @@ update
 upgrade
 install_packages
 cleanup
+
+sudo tlp start
