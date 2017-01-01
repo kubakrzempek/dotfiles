@@ -7,10 +7,10 @@
 
 export ZSH=$HOME/.dotfiles
 
+# Export Atom packages
+echo "> Exporting atom packages..."
+apm list --installed --bare > $ZSH/Apmfile
+
 # Install software
 echo "› $ZSH/script/install"
 $ZSH/script/install
-
-# Export Atom packages
-echo "> Exporting atom packages..."
-apm list --installed --bare > $ZSH/Ampfile
