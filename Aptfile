@@ -6,22 +6,24 @@ dkms
 ## UTILS
 autoconf
 ack-grep
+compizconfig-settings-manager
 localepurge
 libssl-dev
+libreadline-dev
+libpq-dev
 curl
 htop
 vde2
 ca-certificates
 gnome-online-accounts
 nodejs
-npm
 zsh
 unrar
 xclip
 unity-tweak-tool
 tlp
 tlp-rdw
-flashplugin-installer
+adobe-flashplugin
 icedtea-8-plugin
 openjdk-8-jre
 
@@ -29,7 +31,6 @@ openjdk-8-jre
 atom
 bleachbit
 vim
-chromium-browser
 vlc
 gimp
 keepassx
@@ -39,7 +40,6 @@ git
 postgresql-9.5
 postgresql-contrib-9.5
 virtualbox-5.1
-steam
 inkscape
 gufw
 clementine
