@@ -4,12 +4,6 @@
 
 set -e
 
-install_packages () {
-  local packagelist="$(dirname "$0")/../Aptfile"
-  echo "> Installing packages..."
-  xargs -a <(awk '/^\s*[^#]/' "$packagelist") -r -- sudo apt-get -y install
-}
-
 update () {
   echo "> Updating apt-get..."
   sudo apt-get update
@@ -28,7 +22,6 @@ cleanup () {
 
 update
 upgrade
-install_packages
 cleanup
 
 sudo tlp start
