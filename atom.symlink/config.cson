@@ -19,15 +19,20 @@
       "language-php"
       "language-python"
       "language-toml"
+      "open-on-github"
+    ]
+    packagesWithKeymapsDisabled: [
+      "git-diff"
     ]
     projectHome: "/home/kuba/src"
+    telemetryConsent: "limited"
     themes: [
       "one-light-ui"
       "one-light-syntax"
     ]
   editor:
-    fontFamily: "Fira Mono"
-    fontSize: 15
+    fontFamily: "Fira Code"
+    fontSize: 17
     invisibles: {}
     preferredLineLength: 100
     scrollPastEnd: true
@@ -40,10 +45,10 @@
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
   fonts:
-    fontFamily: "Fira Mono"
-    preview: "dfdfdfd @"
+    fontFamily: "FiraCode"
   "git-diff": {}
-  "git-plus": {}
+  "git-plus":
+    general: {}
   minimap:
     absoluteMode: true
   "one-dark-ui": {}
