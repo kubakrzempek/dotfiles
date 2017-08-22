@@ -61,10 +61,22 @@ ruby_version() {
 rb_prompt() {
   if ! [[ -z "$(ruby_version)" ]]
   then
-    echo "%{$fg_bold[yellow]%}$(ruby_version)%{$reset_color%} "
+    echo "r:$(ruby_version)"
   else
     echo ""
   fi
+}
+
+node_version () {
+  echo "$(echo "$(node -v)" | cut -d 'v' -f 2)"
+}
+
+node_prompt() {
+  echo "n:$(node_version)"
+}
+
+lang_prompts() {
+  echo "%{$fg_bold[yellow]%}$(rb_prompt)/$(node_prompt)%{$reset_color%} "
 }
 
 timestamp() {
@@ -75,7 +87,7 @@ directory_name() {
   echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(rb_prompt)in $(directory_name) $(git_dirty)$(need_push)@$(timestamp)\n› '
+export PROMPT=$'\n$(lang_prompts)in $(directory_name) $(git_dirty)$(need_push)@$(timestamp)\n› '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
