@@ -133,8 +133,21 @@ install_dotfiles () {
   done
 }
 
+provision_ubuntu () {
+  sh -c "ubuntu/add-repositories.sh"
+
+  echo "> Installing packages..."
+  xargs -a <(awk '/^\s*[^#]/' "Aptfile") -r -- sudo apt-get -y install
+}
+
+provision_atom () {
+  apm install --packages-file "$(dirname $0)/../Apmfile"
+}
+
 setup_gitconfig
 install_dotfiles
+provision_ubuntu
+provision_atom
 
 echo ''
 echo '  All installed!'

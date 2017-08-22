@@ -6,10 +6,5 @@ set -e
 
 cd "$(dirname $0)"/..
 
-echo "> Installing packages..."
-xargs -a <(awk '/^\s*[^#]/' "Aptfile") -r -- sudo apt-get -y install
-
 # find the installers and run them iteratively
 find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
-
-apm install --packages-file Apmfile
