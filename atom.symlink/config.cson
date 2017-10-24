@@ -1,4 +1,7 @@
 "*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "6bfb232a-fe0c-4db8-8572-dcf7ae3443a2"
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
     confirmCompletion: "tab"
@@ -49,6 +52,9 @@
   "git-diff": {}
   "git-plus":
     general: {}
+  "linter-eslint": {}
+  "linter-ui-default":
+    panelHeight: 81
   minimap:
     absoluteMode: true
   "one-dark-ui": {}
@@ -58,7 +64,9 @@
   tabs:
     enableVcsColoring: true
     usePreviewTabs: true
-  "tree-view": {}
+  "tree-view":
+    autoReveal: true
+    squashDirectoryNames: true
   welcome:
     showOnStartup: false
   whitespace:
