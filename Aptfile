@@ -5,13 +5,12 @@ dkms
 
 ## UTILS
 autoconf
-ack-grep
-compizconfig-settings-manager
 localepurge
 libssl-dev
 libreadline-dev
 libpq-dev
 curl
+gnome-tweak-tool
 htop
 vde2
 ca-certificates
@@ -19,10 +18,8 @@ gnome-online-accounts
 zsh
 unrar
 xclip
-unity-tweak-tool
 tlp
 tlp-rdw
-adobe-flashplugin
 icedtea-8-plugin
 openjdk-8-jre
 
@@ -33,15 +30,12 @@ vim
 vlc
 gimp
 keepassx
-redshift
-redshift-gtk
 git
-postgresql-9.5
-postgresql-contrib-9.5
-virtualbox-5.1
+postgresql
+postgresql-contrib
+virtualbox
 inkscape
 gufw
-clementine
 
 ## MISC
 cowsay

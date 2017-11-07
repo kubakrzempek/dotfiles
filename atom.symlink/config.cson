@@ -54,7 +54,8 @@
     general: {}
   "linter-eslint": {}
   "linter-ui-default":
-    panelHeight: 81
+    panelHeight: 43
+    showPanel: true
   minimap:
     absoluteMode: true
   "one-dark-ui": {}

@@ -1,6 +1,7 @@
 atom-beautify@0.30.5
-atom-typescript@11.0.6
+atom-typescript@11.0.10
 busy-signal@1.4.3
+emmet@2.4.3
 file-icons@2.1.13
 file-watcher@1.2.6
 fonts@3.0.3
@@ -8,7 +9,7 @@ intentions@1.1.5
 language-slim@0.6.0
 language-vue@0.23.1
 linter@2.2.0
-linter-ui-default@1.6.8
+linter-ui-default@1.6.10
 open-in-browser@0.5.2
 rulerz@0.4.3
 

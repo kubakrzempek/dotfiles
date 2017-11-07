@@ -136,6 +136,7 @@ install_dotfiles () {
 provision_ubuntu () {
   sh -c "ubuntu/add-repositories.sh"
 
+  sudo apt-get update
   echo "> Installing packages..."
   xargs -a <(awk '/^\s*[^#]/' "Aptfile") -r -- sudo apt-get -y install
 }
