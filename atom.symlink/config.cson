@@ -2,11 +2,15 @@
   "atom-beautify":
     general:
       _analyticsUserId: "6bfb232a-fe0c-4db8-8572-dcf7ae3443a2"
+  "atom-ide-ui":
+    "atom-ide-diagnostics-ui":
+      autoVisibility: true
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
     confirmCompletion: "tab"
   autosave: {}
   core:
+    debugLSP: true
     disabledPackages: [
       "background-tips"
       "exception-reporting"
@@ -23,16 +27,14 @@
       "language-python"
       "language-toml"
       "open-on-github"
+      "file-watcher"
+      "rulerz"
     ]
     packagesWithKeymapsDisabled: [
       "git-diff"
     ]
     projectHome: "/home/kuba/src"
     telemetryConsent: "limited"
-    themes: [
-      "one-light-ui"
-      "one-light-syntax"
-    ]
   editor:
     fontFamily: "Fira Code"
     fontSize: 17
@@ -52,6 +54,7 @@
   "git-diff": {}
   "git-plus":
     general: {}
+  "ide-typescript": {}
   "linter-eslint": {}
   "linter-ui-default":
     panelHeight: 43
@@ -66,7 +69,6 @@
     enableVcsColoring: true
     usePreviewTabs: true
   "tree-view":
-    autoReveal: true
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
