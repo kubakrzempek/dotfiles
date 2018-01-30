@@ -1,5 +1,8 @@
 .ruby-version
 .rbenv-vars*
+
+*.pid*
+
 .npm-debug.log
 .node-version
 node-modules/
