@@ -7,6 +7,8 @@ fi
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
 
+export GPG_TTY=$(tty)
+
 fpath=($ZSH/functions $fpath)
 
 autoload -U $ZSH/functions/*(:t)
