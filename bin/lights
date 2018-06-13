@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+
+require "json"
+require "pry"
+
+mode = ARGV[0].to_sym
+
+unless %i(on off).include?(mode)
+  puts "You can turn the lights on or off, there are no other options"
+  exit
+end
+
+puts "Turning lights #{mode}..."
+
+settings = {
+  on: {
+    themes: ["one-light-ui", "one-light-syntax"],
+  },
+  off: {
+    themes: ["one-dark-ui", "one-dark-syntax"],
+  },
+}
+
+atom_config_path = File.join(File.expand_path(__dir__), "..", "atom.symlink", "config.json")
+atom_config = JSON.parse(File.read(atom_config_path))
+
+atom_config["*"]["core"]["themes"] = settings[mode][:themes]
+
+File.open(atom_config_path, "w") do |config|
+  config << JSON.pretty_generate(atom_config)
+end
