@@ -1,12 +1,14 @@
-atom-beautify@0.30.9
-atom-ide-ui@0.6.0
-file-icons@2.1.14
+atom-beautify@0.32.5
+atom-ide-ui@0.12.0
+cson@2.0.1
+file-icons@2.1.21
 file-watcher@1.2.6
 fonts@3.0.3
-ide-ruby@0.1.6
-ide-typescript@0.7.0
+ide-typescript@0.7.6
+language-haml@0.31.1
+language-slim@1.0.0
 language-vue@0.23.1
 open-in-browser@0.5.2
-rulerz@0.4.3
-teletype@0.2.3
+rulerz@0.5.0
+teletype@0.13.3
 
