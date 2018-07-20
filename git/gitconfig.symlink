@@ -26,13 +26,14 @@
 [help]
         autocorrect = 1
 [rerere]
-	      enabled = 1
-	      autoupdate = 1
+        enabled = 1
+        autoupdate = 1
 [push]
         # See `git help config` (search for push.default)
         # for more information on different options of the below setting.
         #
         # Setting to git 2.0 default to suppress warning message
         default = simple
-[user]
-	signingkey = 24D31ED983E0E78C
+        recurseSubmodules = check
+[status]
+        submodulesummary = 1
