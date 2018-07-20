@@ -2,13 +2,18 @@
 bison
 build-essential
 dkms
+zlib1g-dev
+libffi-dev
+libssl-dev
+libreadline-dev
+libpq-dev
+libxml2-dev
+libcurl4-openssl-dev
+gcc-6
 
 ## UTILS
 autoconf
 localepurge
-libssl-dev
-libreadline-dev
-libpq-dev
 curl
 gnome-tweak-tool
 htop
@@ -22,9 +27,9 @@ tlp
 tlp-rdw
 icedtea-8-plugin
 openjdk-8-jre
+ubuntu-restricted-extras
 
 ## PROGRAMS
-atom
 bleachbit
 vim
 vlc
@@ -36,8 +41,10 @@ postgresql-contrib
 virtualbox
 inkscape
 gufw
-darktables
-gnome-subtitles
+darktable
+pinta
+kazam
+#gnome-subtitles
 
 ## MISC
 cowsay

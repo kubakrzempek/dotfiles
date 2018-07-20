@@ -135,6 +135,7 @@ install_dotfiles () {
 
 provision_ubuntu () {
   sh -c "ubuntu/add-repositories.sh"
+  sh -c "ubuntu/add_snaps.sh"
 
   sudo apt-get update
   echo "> Installing packages..."
