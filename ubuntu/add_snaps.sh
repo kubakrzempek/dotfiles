@@ -2,8 +2,6 @@
 #
 # Adds snaps based apps
 
-sudo snap install heroku --classic
 sudo snap install skype --classic
 sudo snap install slack --classic
-sudo snap install atom --classic
 sudo snap install postman --classic
