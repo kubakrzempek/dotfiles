@@ -142,7 +142,7 @@ provision_ubuntu () {
   xargs -a <(awk '/^\s*[^#]/' "Aptfile") -r -- sudo apt-get -y install
 
   echo "> Set up inotify watches..."
-  echo fs.inotify.max_user_watches=65536 | sudo tee -a /etc/sysctl.conf
+  echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
 }
 
 provision_atom () {
