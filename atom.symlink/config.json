@@ -6,14 +6,17 @@
       }
     },
     "atom-ide-ui": {
-      "atom-ide-diagnostics-ui": {},
-      "use": {}
+      "atom-ide-diagnostics-ui": {
+      },
+      "use": {
+      }
     },
     "autocomplete-plus": {
       "backspaceTriggersAutocomplete": true,
       "confirmCompletion": "tab"
     },
-    "autosave": {},
+    "autosave": {
+    },
     "core": {
       "debugLSP": true,
       "disabledPackages": [
@@ -47,7 +50,8 @@
     "editor": {
       "fontFamily": "Fira Code",
       "fontSize": 16,
-      "invisibles": {},
+      "invisibles": {
+      },
       "preferredLineLength": 100,
       "scrollPastEnd": true,
       "showIndentGuide": true,
@@ -64,15 +68,19 @@
     "fonts": {
       "fontFamily": "FiraCode"
     },
-    "git-diff": {},
+    "git-diff": {
+    },
     "git-plus": {
-      "general": {}
+      "general": {
+      }
     },
     "ide-ruby": {
       "dockerPath": "/usr/bin/docker"
     },
-    "ide-typescript": {},
-    "linter-eslint": {},
+    "ide-typescript": {
+    },
+    "linter-eslint": {
+    },
     "linter-ui-default": {
       "panelHeight": 43,
       "showPanel": true
@@ -80,10 +88,14 @@
     "minimap": {
       "absoluteMode": true
     },
-    "one-dark-ui": {},
-    "one-light-ui": {},
-    "pigments": {},
-    "rulerz": {},
+    "one-dark-ui": {
+    },
+    "one-light-ui": {
+    },
+    "pigments": {
+    },
+    "rulerz": {
+    },
     "tabs": {
       "enableVcsColoring": true,
       "usePreviewTabs": true
