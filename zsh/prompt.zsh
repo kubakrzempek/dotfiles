@@ -87,12 +87,20 @@ directory_name() {
   echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(lang_prompts)in $(directory_name) $(git_dirty)$(need_push)@$(timestamp)\n› '
+preexec() {
+  timer=${timer:-$SECONDS}
+}
+
+export PROMPT=$'\n[last: ${timer_show}s] $(lang_prompts)in $(directory_name) $(git_dirty)$(need_push)@$(timestamp)\n› '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
 
 precmd() {
-  title "zsh" "%m" "%55<...<%~"
-  set_prompt
+  if [ $timer ]; then
+    timer_show=$(($SECONDS - $timer))
+    title "zsh" "%m" "%55<...<%~"
+    set_prompt
+    unset timer
+  fi
 }
