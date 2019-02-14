@@ -6,17 +6,17 @@ set -e
 
 update () {
   echo "> Updating apt-get..."
-  sudo apt-get update
+  sudo apt update
 }
 
 upgrade () {
-  echo "> Upgrading distro..."
-  sudo apt-get -y dist-upgrade
+  echo "> Installing, updating packages..."
+  sudo apt -y full-upgrade
 }
 
 cleanup () {
   echo "> Cleaning up..."
-  sudo apt-get -y autoremove
+  sudo apt -y autoremove
   sudo apt-get -y autoclean
 }
 
