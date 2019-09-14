@@ -14,18 +14,25 @@ puts "Turning lights #{mode}..."
 
 settings = {
   on: {
-    themes: ["one-light-ui", "one-light-syntax"],
+    atom: ["one-light-ui", "one-light-syntax"],
+    shell: "United-Ubuntu",
+    gtk: "United-Ubuntu",
   },
   off: {
-    themes: ["one-dark-ui", "one-dark-syntax"],
+    atom: ["one-dark-ui", "one-dark-syntax"],
+    shell: "United-Ubuntu-Dark",
+    gtk: "United-Ubuntu-Dark",
   },
 }
 
 atom_config_path = File.join(File.expand_path(__dir__), "..", "atom.symlink", "config.json")
 atom_config = JSON.parse(File.read(atom_config_path))
 
-atom_config["*"]["core"]["themes"] = settings[mode][:themes]
+atom_config["*"]["core"]["themes"] = settings[mode][:atom]
 
 File.open(atom_config_path, "w") do |config|
   config << JSON.pretty_generate(atom_config)
 end
+
+system("gsettings set org.gnome.desktop.interface gtk-theme \"#{settings[mode][:gtk]}\"")
+system("dconf write /org/gnome/shell/extensions/user-theme/name \"'#{settings[mode][:shell]}'\"")
