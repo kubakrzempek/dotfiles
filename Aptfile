@@ -30,6 +30,9 @@ openjdk-8-jre
 ubuntu-restricted-extras
 software-properties-common
 apt-transport-https
+exfat-fuse
+exfat-utils
+fonts-firacode
 
 # POWER MANAGEMENT STUFF
 acpi-call-dkms
