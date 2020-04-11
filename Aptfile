@@ -33,6 +33,7 @@ apt-transport-https
 exfat-fuse
 exfat-utils
 fonts-firacode
+crossftp
 
 # POWER MANAGEMENT STUFF
 acpi-call-dkms
@@ -58,7 +59,8 @@ gufw
 darktable
 pinta
 kazam
-#gnome-subtitles
+flatpak
+gnome-software-plugin-flatpak
 
 ## MISC
 cowsay
