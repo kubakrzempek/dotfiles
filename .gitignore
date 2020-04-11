@@ -8,4 +8,9 @@ atom.symlink/storage
 atom.symlink/themes
 atom.symlink/nohup.out
 
+config/Code.symlink/*
+!config/Code.symlink/User
+config/Code.symlink/User/globalStorage
+config/Code.symlink/User/workspaceStorage
+
 git/gitconfig.local.symlink

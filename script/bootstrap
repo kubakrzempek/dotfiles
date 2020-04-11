@@ -140,10 +140,10 @@ provision_ubuntu () {
   sh -c "ubuntu/add_snaps.sh"
 
   sudo apt-get update
-  echo "> Installing packages..."
+  echo "  > Installing packages..."
   xargs -a <(awk '/^\s*[^#]/' "Aptfile") -r -- sudo apt-get -y install
 
-  echo "> Set up inotify watches..."
+  echo "  > Set up inotify watches..."
   echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
 
   echo "  > Add flathub repository..."
@@ -154,10 +154,16 @@ provision_atom () {
   apm install --packages-file "$(dirname $0)/../Apmfile"
 }
 
+provision_vscode () {
+  echo "  > Installing VSCode extensions"
+  xargs -a <(awk '/^\s*[^#]/' "VSCfile") -r -- code --install-extensions
+}
+
 setup_gitconfig
 install_dotfiles
 provision_ubuntu
 provision_atom
+provision_vscode
 
 echo ''
 echo '  All installed!'
