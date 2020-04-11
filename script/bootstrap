@@ -145,6 +145,9 @@ provision_ubuntu () {
 
   echo "> Set up inotify watches..."
   echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
+
+  echo "  > Add flathub repository..."
+  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 }
 
 provision_atom () {
