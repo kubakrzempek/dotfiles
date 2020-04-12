@@ -150,10 +150,6 @@ provision_ubuntu () {
   flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 }
 
-provision_atom () {
-  apm install --packages-file "$(dirname $0)/../Apmfile"
-}
-
 provision_vscode () {
   echo "  > Installing VSCode extensions"
   xargs -a <(awk '/^\s*[^#]/' "VSCfile") -r -- code --install-extensions
@@ -162,7 +158,6 @@ provision_vscode () {
 setup_gitconfig
 install_dotfiles
 provision_ubuntu
-provision_atom
 provision_vscode
 
 echo ''

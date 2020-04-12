@@ -14,13 +14,11 @@ puts "Turning lights #{mode}..."
 
 settings = {
   on: {
-    atom: ["one-light-ui", "one-light-syntax"],
     vscode: "Atom One Light",
     shell: "United-Ubuntu",
     gtk: "United-Ubuntu",
   },
   off: {
-    atom: ["one-dark-ui", "one-dark-syntax"],
     vscode: "Andromeda",
     shell: "United-Ubuntu-Dark",
     gtk: "United-Ubuntu-Dark",
@@ -34,12 +32,6 @@ vscode_config["workbench.colorTheme"] = settings[mode][:vscode]
 File.open(vscode_config_path, "w") do |config|
   config << JSON.pretty_generate(vscode_config)
   config << "\n"
-end
-
-atom_config["*"]["core"]["themes"] = settings[mode][:atom]
-
-File.open(atom_config_path, "w") do |config|
-  config << JSON.pretty_generate(atom_config)
 end
 
 system("gsettings set org.gnome.desktop.interface gtk-theme \"#{settings[mode][:gtk]}\"")

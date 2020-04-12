@@ -7,10 +7,6 @@
 
 export ZSH=$HOME/.dotfiles
 
-# Export Atom packages
-echo "  > Exporting atom packages..."
-apm list --installed --bare > $ZSH/Apmfile
-
 echo "  > Exporting VSCode packages..."
 code --list-extensions > $ZSH/VSCfile
 

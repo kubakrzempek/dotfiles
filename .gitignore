@@ -1,13 +1,3 @@
-atom.symlink/.apm
-atom.symlink/.node-gyp
-atom.symlink/.storage
-atom.symlink/blob-store
-atom.symlink/compile-cache/
-atom.symlink/packages
-atom.symlink/storage
-atom.symlink/themes
-atom.symlink/nohup.out
-
 config/Code.symlink/*
 !config/Code.symlink/User
 config/Code.symlink/User/globalStorage
