@@ -9,31 +9,26 @@ libreadline-dev
 libpq-dev
 libxml2-dev
 libcurl4-openssl-dev
-gcc-6
 libsqlite3-dev
 libjemalloc-dev
 
 ## UTILS
-autoconf
-localepurge
-curl
-gnome-tweak-tool
-htop
-vde2
-ca-certificates
-gnome-online-accounts
-zsh
-unrar
-xclip
-icedtea-8-plugin
-openjdk-8-jre
-ubuntu-restricted-extras
-software-properties-common
-apt-transport-https
-exfat-fuse
-exfat-utils
-fonts-firacode
-crossftp
+# autoconf
+# localepurge
+# curl
+# gnome-tweak-tool
+# htop
+# vde2
+# ca-certificates
+# gnome-online-accounts
+# xclip
+# openjdk-8-jre
+# ubuntu-restricted-extras
+# software-properties-common
+# apt-transport-https
+# exfat-fuse
+# exfat-utils
+# fonts-firacode
 
 # POWER MANAGEMENT STUFF
 acpi-call-dkms
@@ -43,6 +38,11 @@ tlp
 tlp-rdw
 
 ## PROGRAMS
+zsh
+unrar
+xclip
+htop
+fonts-firacode
 bleachbit
 heroku
 vim
@@ -59,7 +59,6 @@ darktable
 pinta
 kazam
 flatpak
-gnome-software-plugin-flatpak
 
 ## MISC
 cowsay
